@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="description">Абзац 1</p>
+    <p class="nodescription">Абзац 2</p>
+    <p class="description">Абзац 3</p>
+    <p class="nodescription">Абзац 4</p>
+    <button class="deliteTextBtn">Удалить</button>
+    <script>
+        const removeBtn = document.querySelector('.deliteTextBtn');
+
+        document.addEventListener('click', function () {
+            const paragraph = document.querySelector('.description');
+            paragraph.remove()
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="nodescription">Элемент 1</p>
+    <p class="description">Элемент 2</p>
+    <p class="description">Элемент 3</p>
+    <p class="nodescription">Элемент 4</p>
+    <script>
+        const allDescriptions = document.querySelectorAll('.description');
+        console.log(allDescriptions);
+        allDescriptions.forEach(description => {
+   description.textContent = 'Новый текст';
+});
+    </script>
+</body>
+</html>

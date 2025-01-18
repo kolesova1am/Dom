@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="title">Hello, world!</p>
+    <button class="changeTextBtn">Изменить цвет</button>
+    <script>
+        const titleEl = document.querySelector('.title');
+        const changeTextBtn = document.querySelector('.changeTextBtn');
+        changeTextBtn.addEventListener('click', function () {
+         if(
+           titleEl.style.color === '' 
+         ) {
+             titleEl.style.color = 'blue';
+             changeTextBtn.textContent = 'Вернуть';
+         } else {
+             titleEl.style.color = '';
+             changeTextBtn.textContent = 'Изменить цвет';
+         }
+        });
+
+
+    </script>
+</body>
+</html>

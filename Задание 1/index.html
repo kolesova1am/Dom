@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.hide {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <h1 class="title">Hello, world!</h1>
+    <button class="changeTextBtn">Скрыть</button>
+    <script>
+       const titleEl = document.querySelector('.title');
+       const changeTextBtn = document.querySelector('.changeTextBtn');
+
+       changeTextBtn.addEventListener('click', function () {
+        // if(
+        //   titleEl.style.display === '' 
+        // ) {
+        //     titleEl.style.display = 'none';
+        //     changeTextBtn.textContent = 'Показать';
+        // } else {
+        //     titleEl.style.display = '';
+        //     changeTextBtn.textContent = 'Скрыть';
+        // }
+
+        titleEl.classList.toggle("hide")
+        if(titleEl.classList.contains("hide")){
+            changeTextBtn.textContent = 'Показать';
+        } else {
+            changeTextBtn.textContent = 'Скрыть';
+        }
+       });
+
+    </script>
+</body>
+</html>
+
